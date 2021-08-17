@@ -10,13 +10,13 @@ bobView:true
 anaglyph3d:false
 maxFps:120
 fboEnable:true
-difficulty:1
+difficulty:3
 fancyGraphics:true
 ao:2
 renderClouds:true
 resourcePacks:[]
 incompatibleResourcePacks:[]
-lastServer:MC.MUZCRAFT.COM
+lastServer:hypixel.net
 lang:en_US
 chatVisibility:0
 chatColors:true

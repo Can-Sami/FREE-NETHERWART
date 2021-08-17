@@ -1,8 +1,10 @@
 package gg.discord.gzPpN5yc44;
 
+import gg.discord.gzPpN5yc44.Commands.CommandHandler;
 import gg.discord.gzPpN5yc44.HUD.HUDOverlay;
 import gg.discord.gzPpN5yc44.HUD.MutantLog;
 import net.minecraft.client.settings.KeyBinding;
+import net.minecraftforge.client.ClientCommandHandler;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.fml.client.registry.ClientRegistry;
 import net.minecraftforge.fml.common.FMLLog;
@@ -16,7 +18,6 @@ public class ForgeMain {
     Starter keybind = new Starter();
     MutantLog mutantLog = new MutantLog();
     HUDOverlay HUD = new HUDOverlay();
-
     public static ForgeMain Instance;
 
     public static Logger logger = FMLLog.getLogger();
@@ -37,6 +38,7 @@ public class ForgeMain {
         MinecraftForge.EVENT_BUS.register(HUD);
         MinecraftForge.EVENT_BUS.register(Instance.keybind);
         MinecraftForge.EVENT_BUS.register(mutantLog);
+        ClientCommandHandler.instance.registerCommand(new CommandHandler());
 
         ClientRegistry.registerKeyBinding(keybinding);
         ClientRegistry.registerKeyBinding(keybinding1);

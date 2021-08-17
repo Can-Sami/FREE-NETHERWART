@@ -13,6 +13,8 @@ public class HUDOverlay extends GuiScreen {
     public void Render(RenderGameOverlayEvent.Post event){
         if (event.type == RenderGameOverlayEvent.ElementType.TEXT) {
             Minecraft.getMinecraft().fontRendererObj.drawString("BOT Running: " + Starter.Status, 10, 10, 0xB5F498, false);
+            Minecraft.getMinecraft().fontRendererObj.drawString("Counter: " + MutantLog.MutantCounter, 10, 20, 0xB5F498, false);
+
         }
     }
 

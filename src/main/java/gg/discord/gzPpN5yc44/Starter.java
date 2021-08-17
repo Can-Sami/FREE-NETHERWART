@@ -41,7 +41,9 @@ public class Starter {
                 if(tested){
                     if(WhitelistHandler.Raw.contains("true")){
                         EntityPlayerSP entityPlayerSP = (Minecraft.getMinecraft()).thePlayer;
-                        entityPlayerSP.addChatComponentMessage((IChatComponent) new ChatComponentText(EnumChatFormatting.YELLOW + "[FLEX SCRIPT]:" + EnumChatFormatting.WHITE + " You have" + EnumChatFormatting.AQUA + " successfully" + EnumChatFormatting.WHITE + " ran the FREE NetherWart Bot! You can always buy the PREMIUM from our discord:" + EnumChatFormatting.AQUA + " https://discord.gg/gzPpN5yc44"));
+                        entityPlayerSP.addChatComponentMessage((IChatComponent) new ChatComponentText(EnumChatFormatting.YELLOW + "[FLEX SCRIPT]:" + EnumChatFormatting.WHITE + " You have" + EnumChatFormatting.AQUA + " successfully" + EnumChatFormatting.WHITE + " ran the FREE NetherWart Bot! You can always buy the PREMIUM from our discord:" + EnumChatFormatting.GREEN + " https://discord.gg/gzPpN5yc44"));
+                        entityPlayerSP.addChatComponentMessage((IChatComponent) new ChatComponentText(EnumChatFormatting.GRAY + "If you wish to toggle Anti Stuck use" + EnumChatFormatting.GREEN + " '/AntiStuck'" + EnumChatFormatting.GRAY + " . "));
+
                         Status = true;
                         Clicker = true;
                         timer.schedule(new Left(), 1000, 71000);
